@@ -13,6 +13,27 @@
         android:theme="@style/Theme.PMD_SE_A_Java"
         tools:targetApi="31">
         <activity
+            android:name=".FirebaseExamples.FirebaseExampleOneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".broadcastReciever.AirplaineModeChangeReciever" />
+
+        <activity
+            android:name=".broadcastReciever.broadcastexampleoneMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SQLiteExample.EditContactEntry"
             android:exported="false" />
         <activity
