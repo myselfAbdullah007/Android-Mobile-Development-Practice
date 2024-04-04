@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -25,6 +26,7 @@ public class MyBoundService extends Service {
     }
     public void Play(){
         mediaPlayer.start();
+        Toast.makeText(this, "Media player started", Toast.LENGTH_SHORT).show();
     }
 
     public void Pause(){
@@ -37,6 +39,8 @@ public class MyBoundService extends Service {
 
     public void Stop(){
         mediaPlayer.stop();
+        Toast.makeText(this, "Media Player is stoped", Toast.LENGTH_SHORT).show();
+
     }
 
     @Override

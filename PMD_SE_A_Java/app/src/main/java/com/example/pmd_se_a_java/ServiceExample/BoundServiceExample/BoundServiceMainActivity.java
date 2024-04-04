@@ -41,6 +41,7 @@ public class BoundServiceMainActivity extends AppCompatActivity {
         bindService(intent, myServiceConnection, BIND_AUTO_CREATE);
     }
 
+
     public void PlayMusic(View view){
         if (myBoundService == true){
             if(myBoundServicePlayer.isPlaying()){
@@ -48,6 +49,13 @@ public class BoundServiceMainActivity extends AppCompatActivity {
             }else{
                 myBoundServicePlayer.Play();
             }
+        }
+    }
+
+    public void Stop(View view) {
+        if(myBoundService==true)
+        {
+           myBoundServicePlayer.Stop();
         }
     }
 }

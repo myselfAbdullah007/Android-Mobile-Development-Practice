@@ -8,6 +8,7 @@
 
     <Button
         android:id="@+id/button12"
+        android:onClick="Stop"
         android:layout_width="225dp"
         android:layout_height="64dp"
         android:layout_marginBottom="208dp"
@@ -19,6 +20,7 @@
 
     <Button
         android:id="@+id/button11"
+        android:onClick="PlayMusic"
         android:layout_width="235dp"
         android:layout_height="72dp"
         android:layout_marginTop="180dp"
