@@ -2,9 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SQLiteExample.NewContactEntry">
+
     <EditText
         android:id="@+id/edtfirstname"
         android:layout_width="265dp"
@@ -79,15 +82,17 @@
 
     <Button
         android:id="@+id/btnsave"
-        android:layout_width="156dp"
-        android:layout_height="77dp"
+        android:layout_width="240dp"
+        android:layout_height="86dp"
         android:layout_below="@+id/edthomeaddress"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="116dp"
-        android:text="@string/save_info" />
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="107dp"
+        android:text="@string/buttonsavetosql"
+        tools:text="Save" />
+
 </RelativeLayout>

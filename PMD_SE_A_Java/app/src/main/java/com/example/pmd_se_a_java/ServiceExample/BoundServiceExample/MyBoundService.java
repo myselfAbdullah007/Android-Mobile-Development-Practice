@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import com.example.pmd_se_a_java.R;
 
 
-
 public class MyBoundService extends Service {
 
     public Binder myBinder = new MyBinder();
