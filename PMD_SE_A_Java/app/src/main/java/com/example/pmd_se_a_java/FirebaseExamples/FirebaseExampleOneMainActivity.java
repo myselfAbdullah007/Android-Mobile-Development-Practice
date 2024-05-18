@@ -44,10 +44,11 @@ public class FirebaseExampleOneMainActivity extends AppCompatActivity {
 //        myreference.child("BSSE").child("PMD").child("Student 1").setValue("Abdullah");
 //        myreference.child("BSSE").child("SMD").child("Student 2").setValue("Chaudhary");
 
-        myreference.setValue("The First Value To be Retrieved");
+        myreference.setValue("The First vcv Value To be Retrieved");
     }
 
     public void RetriveValue(View view) {
+
         myreference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

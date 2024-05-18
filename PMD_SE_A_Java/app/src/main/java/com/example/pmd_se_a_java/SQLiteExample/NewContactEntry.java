@@ -1,5 +1,6 @@
 package com.example.pmd_se_a_java.SQLiteExample;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -7,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -47,9 +49,18 @@ public class NewContactEntry extends AppCompatActivity {
                 contact.put("phoneNumber",phoneNumber.getText().toString());
                 contact.put("emailAddress",emailAddress.getText().toString());
                 contact.put("homeAddress",homeAddress.getText().toString());
+                AlertDialog.Builder builder = new AlertDialog.Builder(NewContactEntry.this);
+                builder.setMessage("Would you like to add this data to the database?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                 dbTools.AddContact(contact);
+                            finish();}
+                        })
+                        .setNegativeButton("No", null);
+                AlertDialog alert = builder.create();
+                alert.show();
                 Toast.makeText(NewContactEntry.this, "Saved", Toast.LENGTH_SHORT).show();
-                finish();
+
 
             }
         });

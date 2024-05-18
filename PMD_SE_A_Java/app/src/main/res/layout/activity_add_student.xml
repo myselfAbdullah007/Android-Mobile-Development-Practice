@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editTextSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Section"
+        android:layout_below="@id/editTextName"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editTextRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll No"
+        android:layout_below="@id/editTextSection"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCnic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CNIC"
+        android:layout_below="@id/editTextRollNo"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCgpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CGPA"
+        android:layout_below="@id/editTextCnic"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonAddToDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Database"
+        android:layout_below="@id/editTextCgpa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

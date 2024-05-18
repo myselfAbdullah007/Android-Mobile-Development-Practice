@@ -83,6 +83,10 @@
     <string name="send">Send</string>
     <string name="read">Read</string>
     <string name="textviewsensor">TextView</string>
+    <string name="download">Download</string>
+    <string name="save">Save</string>
+    <string name="list">List</string>
+    <string name="search">Search</string>
 
     <string-array name="contacts_array">
         <item>Ali</item>

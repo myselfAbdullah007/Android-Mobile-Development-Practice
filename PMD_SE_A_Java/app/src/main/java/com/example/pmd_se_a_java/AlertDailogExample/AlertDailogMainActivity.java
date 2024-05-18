@@ -31,7 +31,12 @@ public class AlertDailogMainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dailog, int which){
                         textView.setText("2000");
                     }
-                }).setNegativeButton("cancel",null);
+                }).setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textView.setText("Nothing happened");
+                    }
+                });
                 AlertDialog alert = builder.create();
                 alert.show();
 

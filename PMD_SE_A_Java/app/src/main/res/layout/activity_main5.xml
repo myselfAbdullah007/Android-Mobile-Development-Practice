@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pmd_se_a_java.FragmentTask.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView7"
+        android:name="com.example.pmd_se_a_java.FragmentTask.Fragment1"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView10"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentContainerView9"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        tools:layout="@layout/activity_fragment1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView9"
+        android:name="com.example.pmd_se_a_java.FragmentTask.Fragment2"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView10"
+        android:name="com.example.pmd_se_a_java.FragmentTask.Fragment3"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentContainerView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView11"
+        android:name="com.example.pmd_se_a_java.FragmentTask.Fragment4"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="200dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="136dp"
+        android:onClick="DownloadImages"
+        android:text="@string/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -27,7 +27,6 @@ public class ContatcsDetails extends Fragment{
         super.onActivityCreated(savedInstanceState);
         textview = getActivity().findViewById(R.id.contactdetailtextview);
         arrayLength = MyContactsMainActivity.contactsArray.length;
-
     }
     public int getshowIndex(){
         return currentIndex;

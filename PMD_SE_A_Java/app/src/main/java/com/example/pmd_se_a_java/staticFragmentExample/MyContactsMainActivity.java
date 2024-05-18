@@ -3,6 +3,8 @@ package com.example.pmd_se_a_java.staticFragmentExample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.widget.Toast;
 
 import com.example.pmd_se_a_java.CommunicationBwFragments.ButtonPressListener;
 import com.example.pmd_se_a_java.CommunicationBwFragments.SecondFragment;

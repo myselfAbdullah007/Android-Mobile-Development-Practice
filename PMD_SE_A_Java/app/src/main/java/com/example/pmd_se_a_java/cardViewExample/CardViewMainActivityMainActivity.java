@@ -17,24 +17,10 @@ public class CardViewMainActivityMainActivity extends AppCompatActivity {
     public List<My_Model> list;
     public AdapterCardView adapterCardView;
     RecyclerView recyclerView;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_view_main_main);
-        recyclerView = findViewById(R.id.mycardviewrecyclerview);
-        list = new ArrayList<>();
-        adapterCardView = new AdapterCardView(this, list);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapterCardView);
-        insert();
-    }
-
     public void insert(){
         int[] thumbnails = new int[]
                 {
-                        R.drawable.icon,R.drawable.icon,
+                        R.drawable.gojo,R.drawable.icon,
                         R.drawable.icon,R.drawable.icon,
                         R.drawable.icon,R.drawable.icon
                 };
@@ -51,4 +37,18 @@ public class CardViewMainActivityMainActivity extends AppCompatActivity {
         myModel = new My_Model("My Sixth Item", 10, thumbnails[0]);
         list.add(myModel);
     }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_card_view_main_main);
+        recyclerView = findViewById(R.id.mycardviewrecyclerview);
+        list = new ArrayList<>();
+        adapterCardView = new AdapterCardView(this, list);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(adapterCardView);
+        insert();
+    }
+
 }

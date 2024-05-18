@@ -2,19 +2,19 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="BoundServiceMainActivity">
+      <entry key="ListActivity">
         <State />
       </entry>
-      <entry key="FireBaseExampleTwoMainActivity">
+      <entry key="MainActivity (1)">
         <State />
       </entry>
-      <entry key="FirebaseExampleOneMainActivity">
+      <entry key="MainActivity (2)">
+        <State />
+      </entry>
+      <entry key="NewContactEntry">
         <State />
       </entry>
       <entry key="SQLiteMainActivity">
-        <State />
-      </entry>
-      <entry key="SensorExampleOneMainActivity">
         <State />
       </entry>
       <entry key="app">
